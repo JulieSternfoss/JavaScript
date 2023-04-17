@@ -7,5 +7,25 @@
     grid-column: 1/4;
 }
 .carousel__backButton{
+    grid-column: 1/2;
+    z-index: 3;
+}
+.carousel__forwardButton {
     grid-column: 3/4;
+}
+.carousel__image, .carousel__backButton, .carousel__forwardButton {
+    grid-row: 1/2;
+}
+.carousel__backButton, .carousel__forwardButton{
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: white;
+    transition: backgrounb 1500ms ease-in-out;
+}
+.carousel__backButton:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0,0,0,1));
+}
+.carousel__forwardButton:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0,0,0,1));
 }
