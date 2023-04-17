@@ -1,0 +1,11 @@
+.carousel{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    width: 300px;
+}
+.carousel__image{
+    grid-column: 1/4;
+}
+.carousel__backButton{
+    grid-column: 3/4;
+}

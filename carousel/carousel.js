@@ -2,7 +2,7 @@ const CAROUSEL_IMG = document.querySelector(".carousel__image")
 const CAROUSEL_FORWARD = document.querySelector(".carousel__forwardButton")
 const CAROUSEL_BACK = document.querySelector(".carousel__backButton")
 
-const IMAGES = ["http://placekitten.com/300/", "http://placekitten.com/300","http://picsum.photos/300/300"]
+const IMAGES = ["http://placekitten.com/300/","http://picsum.photos/300/300" ,"http://picsum.photos/300/300"]
 
 var index = 0
 CAROUSEL_IMG.src = IMAGES[index]
@@ -24,7 +24,7 @@ function shuffleBack(event){
 }
 function shuffleBack(event){
     index -- 
-    if (index < 0 ){
+    if (index < 0 ) {
         index = IMAGES.length - 1
     }
     CAROUSEL_IMG.src = IMAGES[index]
